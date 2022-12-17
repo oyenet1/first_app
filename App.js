@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={styles.head}>Bowofade First Mobile App</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -12,9 +12,17 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    paddingHorizontal:5,
+    paddingVertical: 30,
+  },
+  head:{
+    color: 'white',
+    backgroundColor: '#18f',
+    padding: 20,
+    fontSize: 20,
+    width: '100%',
+    textAlign: 'center',
+    borderRadius: 7,
   },
 });
